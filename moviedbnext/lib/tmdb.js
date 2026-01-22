@@ -1,4 +1,4 @@
-const BASE_URL = 'https://api.themoviedb.org/3';
+
 async function fetchFromTMDB(path, params = {}) {
     const apiKey = process.env.TMDB_API_KEY;
     console.log('TMDB KEY EXISTS:', !!apiKey);
