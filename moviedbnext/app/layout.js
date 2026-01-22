@@ -1,7 +1,7 @@
 import './globals.css';
 export const metadata = {
-    title: 'MovieDB App',
-    description: 'Movies app on Next.js + TMDB',
+    title: 'Movie DATABASE',
+    description: 'Movies',
 };
 export default function RootLayout({ children }) {
     return (

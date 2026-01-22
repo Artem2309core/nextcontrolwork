@@ -22,3 +22,6 @@ export default function MovieInfo({ movie, genresMap }) {
         </div>
     );
 }
+// основна інфа, рік, жанри, рейтинг.
+
+

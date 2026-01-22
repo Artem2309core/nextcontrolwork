@@ -10,6 +10,8 @@ async function fetchFromTMDB(path, params = {}) {
             searchParams.set(k, String(v));
         }
     }
+    //формування параметрів
+
     const url = `${BASE_URL}${path}?${searchParams.toString()}`;
     console.log('TMDB URL:', url);
     const res = await fetch(url, { next: { revalidate: 60 } });
@@ -25,6 +27,8 @@ async function fetchFromTMDB(path, params = {}) {
     const data = await fetchFromTMDB('/genre/movie/list', {
         language: 'en-US',
     });
+    //список всіх жанрів фільмів
+
     return data?.genres ?? [];
 }export async function getMovies({ page = 1, genreId, query } = {}) {
     if (query?.trim()) {
